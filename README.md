@@ -3,9 +3,19 @@ quickey
 
 GWT Library for handling keyboard events. Will be useful for creating custom shortcuts ala GMail style.
 
-#Repository Information
-To use this as a maven dependency, use the following repository details.
+#Maven Dependency Information
+To use this as a maven dependency, use the following dependency and repository details.
 
+##dependency details
+```
+<dependency>
+	<groupId>io.github.ravibits</groupId>
+	<artifactId>quickey</artifactId>
+	<version>1.0.0</version>
+</dependency>
+```
+
+##repository details
 ```
 <repositories>
     <repository>
