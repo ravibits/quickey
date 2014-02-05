@@ -28,3 +28,19 @@ To use this as a maven dependency, use the following dependency and repository d
     </repository>
 </repositories>
 ```
+
+##Usage
+1. First step is to create an instance of Quickey
+2. Bind a sequence and a callback to execute for that sequence.
+3. Pass in options as third param (optional)
+```
+Quickey.getInstance().bind("/",new Command(){
+      @Override
+      public void execute() {
+        // do something.
+      }
+});
+```
+
+##TODO
+Add full list of options and complete documentation
