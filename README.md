@@ -33,6 +33,8 @@ To use this as a maven dependency, use the following dependency and repository d
 1. First step is to create an instance of Quickey
 2. Bind a sequence and a callback to execute for that sequence.
 3. Pass in options as third param (optional)
+
+### Example 1
 ```
 Quickey.getInstance().bind("/",new Command(){
       @Override
@@ -40,6 +42,24 @@ Quickey.getInstance().bind("/",new Command(){
         // do something.
       }
 });
+```
+### Example 2
+```
+Quickey.getInstance().bind("h e l l o",new Command(){
+      @Override
+      public void execute() {
+        // do something when the user types in hello on the window and in no textbox in particular
+      }
+});
+```
+### Example 3
+```
+Quickey.getInstance().bind("ctrl-q",new Command(){
+      @Override
+      public void execute() {
+        // do something.
+      }
+},new QuickeyOptions().setWidget(textBox));
 ```
 
 ##TODO
